@@ -17,3 +17,17 @@
 # display_person(Name="Amir Khan", Age="45")
 
 
+""" n = int(input())
+while n:
+    s = input()
+    ans = []
+    for i in s:
+        ans.append(i)
+    ans.reverse()
+    for i in ans:
+        print(i, end=" ")
+    n-=1
+    print() """
+
+
+
