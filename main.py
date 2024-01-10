@@ -30,4 +30,14 @@ while n:
     print() """
 
 
-
+"""n = int(input())
+while n:
+    x, y = [int(i) for i in input().split()]
+    f = min(x, y)
+    l = max(x, y)
+    sum = 0
+    for i in range(f+1, l):
+        if i % 2 == 1:
+            sum+=i
+    print(sum)
+    n-=1"""
