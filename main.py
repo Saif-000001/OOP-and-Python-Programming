@@ -44,7 +44,8 @@ while n:
 
 
 
-""" n = int(input())
+""" 
+n = int(input())
 
 x , y = 0, 1
 for _ in range(n):
@@ -52,16 +53,72 @@ for _ in range(n):
    x, y = y, x+y
 #    tmp = x
 #    x = y
-#    y = tmp+x  """
+#    y = tmp+x  
+"""
 
 # S = (X0 - 1) + (X2) + (X4) + (X6) + ............... + (XN)
 
+""" 
 a, b = [int(i) for i in input().split()]
-
 s = 0
 for i in range(2, b+1, 2):
     s+=a**i
 print(s)
+
+"""
+
+# Max Split
+
+""" 
+s = input().strip()
+
+count = 0
+substrings = []
+string = ""
+
+for char in s:
+    string += char
+    if char == 'L':
+        count += 1
+    else:
+        count -= 1
+    if count == 0:
+        substrings.append(string)
+        string = ""
+
+print(len(substrings))
+for substring in substrings:
+    print(substring) 
+"""
+
+""" # Good Sequence
+n = int(input())
+a = [int(i) for i in input().split()]
+
+count_dict = {}
+for i in a:
+    count_dict[i] = count_dict.get(i, 0)+1
+
+ans = 0
+for key , item in count_dict.items():
+    if item >= key:
+        ans += item - key
+    else :
+        ans += item
+  
+print(ans) """
+
+N = int(input())
+A = list(map(int, input().split()))
+
+operations = 0
+
+while all(num % 2 == 0 for num in A):
+    A = [num // 2 for num in A]
+    operations += 1
+
+print(operations)
+
 
 
 
