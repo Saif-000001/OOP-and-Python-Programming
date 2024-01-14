@@ -44,7 +44,7 @@ while n:
 
 
 
-n = int(input())
+""" n = int(input())
 
 x , y = 0, 1
 for _ in range(n):
@@ -52,6 +52,17 @@ for _ in range(n):
    x, y = y, x+y
 #    tmp = x
 #    x = y
-#    y = tmp+x 
+#    y = tmp+x  """
+
+# S = (X0 - 1) + (X2) + (X4) + (X6) + ............... + (XN)
+
+a, b = [int(i) for i in input().split()]
+
+s = 0
+for i in range(2, b+1, 2):
+    s+=a**i
+print(s)
+
+
 
 
