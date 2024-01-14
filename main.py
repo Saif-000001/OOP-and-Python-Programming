@@ -41,3 +41,17 @@ while n:
             sum+=i
     print(sum)
     n-=1"""
+
+
+
+n = int(input())
+
+x , y = 0, 1
+for _ in range(n):
+   print(x, end=" ")
+   x, y = y, x+y
+#    tmp = x
+#    x = y
+#    y = tmp+x 
+
+
