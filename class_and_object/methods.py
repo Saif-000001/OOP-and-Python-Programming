@@ -15,12 +15,33 @@ class Phone:
         return txt
     
 
-my_phone = Phone()
-print(my_phone.feature)
+# my_phone = Phone()
+# print(my_phone.feature)
 
-my_phone.call()
+# my_phone.call()
 
-ans = my_phone.send_sms(45245, 'Hey, laddy!')
-print(ans)
+# ans = my_phone.send_sms(45245, 'Hey, laddy!')
+# print(ans)
 
 # print(call())
+call()
+
+class Phone:
+    price = 12000
+    color = 'blue'
+    brand = 'samsung'
+
+
+    def call(self):
+        print('calling one person')
+
+
+    def send_sms(self, phone, sms):
+        text = f'Sending SMS to: {phone+5}'
+        return text
+
+
+
+my_phone = Phone()
+result = my_phone.send_sms(41524, 'Missy, I missed to miss you')
+print(result)
