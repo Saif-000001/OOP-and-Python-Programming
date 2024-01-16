@@ -108,16 +108,14 @@ for key , item in count_dict.items():
   
 print(ans) """
 
-N = int(input())
-A = list(map(int, input().split()))
+cnt = {}
+i = 1
+if i not in cnt:
+    cnt[i] = 1
+else:
+    cnt[i] += 1
 
-operations = 0
-
-while all(num % 2 == 0 for num in A):
-    A = [num // 2 for num in A]
-    operations += 1
-
-print(operations)
+print(cnt)
 
 
 
